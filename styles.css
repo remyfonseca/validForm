@@ -201,6 +201,13 @@ body {
     color: var(--label-color);
 }
 
+.error-text {
+    color: red;
+    font-size: 12px;
+    text-align: center;
+    margin: 3px auto;
+}
+
 button{
     width: 50%;
     display: block;
