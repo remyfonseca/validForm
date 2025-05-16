@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles.css">
+    <title>ValidForm - Validações em Formulários</title>
+</head>
+<body>
+     <main class="container">
+        <div class="form-image">
+            <img src="./assets/Login.svg" alt="Login Image">
+        </div>
+        <div class="form">
+                <div class="title">
+                    <h1>ValidForm - Validações</h1> 
+                    <i class='bx bx-check-circle'></i>
+                </div>
+                <div class="infos">
+                    <input type="checkbox" id="trigger">
+                    <label for="trigger">Requisitos <i class='bx  bx-caret-right'></i> </label>
+                    <ul>
+                        <li>Nenhum campo pode estar vazio</li>
+                        <li>CPF precisa ser válido</li>
+                        <li>Usuário só poderá conter letras e/ou números</li>
+                        <li>A Senha precisa ter entre 6 e 12 caracteres</li>
+                    </ul>
+                </div>
+            <form action="#">
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome" class="nome validar">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="sobrenome">Sobrenome:</label>
+                        <input type="text" name="sobrenome" id="sobrenome" class="sobrenome validar">
+                    </div>
+                    <div class="input-box">
+                        <label for="cpf">CPF:</label>
+                        <input type="text" name="cpf" id="cpf" class="cpf validar">
+                    </div>
+                    <div class="input-box">
+                        <label for="usuario">Usuário:</label>
+                        <input type="text" name="usuario" id="usuario" class="usuario validar">
+                    </div>
+                    <div class="input-box">
+                        <label for="senha">Senha:</label>
+                        <input type="password" name="senha" id="senha" class="senha validar">
+                    </div>
+                    <div class="input-box">
+                        <label for="repetir-senha">Repetir a senha:</label>
+                        <input type="password" name="r-senha" id="repetir-senha" class="repetir-senha validar">
+                    </div>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+    <script src="./validaCPF.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
