@@ -262,10 +262,10 @@ button:hover{
 
     .input-group {
         flex-direction: column;
-        overflow-y: scroll;
+        overflow-y: auto;
         flex-wrap: nowrap;
-        max-height: 10rem;
-        padding-right: 2rem;
+        max-height: 16rem;
+        padding: 0 2rem 0 1rem;
     }
    
 }
