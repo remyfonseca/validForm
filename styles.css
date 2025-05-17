@@ -256,12 +256,16 @@ button:hover{
         height: auto;
     }
     
+    .form {
+        margin: 0 auto;
+    }
+
     .input-group {
         flex-direction: column;
         overflow-y: scroll;
         flex-wrap: nowrap;
         max-height: 10rem;
-        padding-right: 5rem;
+        padding-right: 2rem;
     }
    
 }
